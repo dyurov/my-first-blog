@@ -1,6 +1,6 @@
 h1 a {
     color: #FCA205;
-    font-family: 'Garamond';
+    font-family: 'EB Garamond';
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Garamond', cursive;
+    font-family: 'EB Garamond', cursive;
 }
 
 .date {
