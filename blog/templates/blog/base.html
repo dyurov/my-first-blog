@@ -4,11 +4,14 @@
         <title>My Blog on Django</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css\blog.css' %}">  <!-- back slash is important, not original -->
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">  <!-- back slash is important, not original -->
         <link href="//fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet" type="text/css">
     </head>
     <body>
     <div class="page-header">
+         {% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        {% endif %}
         <h1><a href="/">My First Website</a></h1>
     </div>
     <div class="content container">
